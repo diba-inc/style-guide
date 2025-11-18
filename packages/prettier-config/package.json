@@ -1,0 +1,20 @@
+{
+  "name": "@diba/prettier-config",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.mjs",
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
+  "types": "dist/index.d.ts",
+  "license": "MPL-2.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "prettier": "3.6.2"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
