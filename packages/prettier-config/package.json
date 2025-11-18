@@ -12,9 +12,9 @@
     "build": "tsc"
   },
   "peerDependencies": {
-    "prettier": "3.6.2"
+    "prettier": "^3.6.0"
   },
   "devDependencies": {
-    "typescript": "5.9.3"
+    "typescript": "^5.9.0"
   }
 }
