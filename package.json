@@ -1,0 +1,8 @@
+{
+  "name": "@diba/style-guide-root",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
