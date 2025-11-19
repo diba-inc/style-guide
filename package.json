@@ -1,5 +1,5 @@
 {
-  "name": "@diba/style-guide-root",
+  "name": "@diba-inc/style-guide-root",
   "version": "0.1.0",
   "private": true,
   "workspaces": [
