@@ -5,7 +5,7 @@ const prettierConfig: Config = {
   bracketSameLine: false,
   bracketSpacing: true,
   jsxSingleQuote: true,
-  printWidth: 80,
+  printWidth: 120,
   semi: false,
   singleQuote: true,
   tabWidth: 2,
