@@ -1,13 +1,19 @@
 {
   "name": "@diba-inc/eslint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "dist/index.js",
   "exports": {
     ".": "./dist/index.js",
     "./node": "./dist/node.js"
   },
-  "types": "dist/index.d.ts, dist/node.d.ts",
+  "types": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "node": ["dist/node.d.ts"],
+      "*": ["dist/index.d.ts"]
+    }
+  },
   "license": "MPL-2.0",
   "scripts": {
     "build": "tsc"
