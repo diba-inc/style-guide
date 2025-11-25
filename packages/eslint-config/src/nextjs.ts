@@ -68,14 +68,8 @@ export default tseslint.config(
         }
       ],
 
-      // Formatting rules
-      'comma-dangle': ['error', 'never'],
+      // Formatting rules delegated to Prettier. Removed redundant ESLint formatting rules to avoid conflicts.
       indent: 'off', // Delegate to Prettier
-      'keyword-spacing': ['error', { before: true, after: true }],
-      'linebreak-style': ['error', 'unix'],
-      quotes: ['error', 'single'],
-      semi: ['error', 'never'],
-      'space-before-blocks': 'error',
 
       // React-related rules
       'react/display-name': 'error',
