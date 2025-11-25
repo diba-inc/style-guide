@@ -46,8 +46,8 @@ export default tseslint.config(
       }
     },
     plugins: {
-      'unused-imports': unusedImports,
-      'simple-import-sort': simpleImportSort
+      'simple-import-sort': simpleImportSort,
+      'unused-imports': unusedImports
     },
     rules: {
       // Disable import rules and delegate to simple-import-sort
