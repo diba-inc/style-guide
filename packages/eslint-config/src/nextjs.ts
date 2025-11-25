@@ -77,14 +77,6 @@ export default tseslint.config(
       semi: ['error', 'never'],
       'space-before-blocks': 'error',
 
-      // Restrict relative imports
-      'no-restricted-imports': [
-        'error',
-        {
-          patterns: ['./*', '../*']
-        }
-      ],
-
       // React-related rules
       'react/display-name': 'error',
       'react/function-component-definition': [
