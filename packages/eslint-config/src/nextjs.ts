@@ -81,7 +81,7 @@ export default tseslint.config(
         }
       ],
       'react/jsx-uses-react': 'off',
-      'react/no-multi-comp': ['error', { ignoreStateless: false }],
+      'react/no-multi-comp': 'off',
       'react/no-unknown-property': ['error', { ignore: ['jsx', 'global'] }],
       'react/react-in-jsx-scope': 'off',
 
