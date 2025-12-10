@@ -1,15 +1,18 @@
+import type { Linter } from 'eslint'
 import js from '@eslint/js'
 import prettier from 'eslint-config-prettier'
 import nextPlugin from '@next/eslint-plugin-next'
-import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
 import typescriptEslintParser from '@typescript-eslint/parser'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import reactPlugin from 'eslint-plugin-react'
 import testingLibrary from 'eslint-plugin-testing-library'
 import unusedImports from 'eslint-plugin-unused-imports'
 import tseslint from 'typescript-eslint'
+import { defineConfig } from 'eslint/config'
 
-export default tseslint.config(
+const nextFlatPlugin = nextPlugin as unknown as Linter
+
+export default defineConfig(
   {
     ignores: ['.next/**', 'node_modules/**']
   },
@@ -25,8 +28,7 @@ export default tseslint.config(
       parser: typescriptEslintParser
     },
     plugins: {
-      '@typescript-eslint': typescriptEslintPlugin,
-      next: nextPlugin,
+      next: nextFlatPlugin,
       react: reactPlugin,
       'simple-import-sort': simpleImportSort,
       'testing-library': testingLibrary,
@@ -68,8 +70,8 @@ export default tseslint.config(
         }
       ],
 
-      // Formatting rules delegated to Prettier. Removed redundant ESLint formatting rules to avoid conflicts.
-      indent: 'off', // Delegate to Prettier
+      // Formatting rules delegated to Prettier
+      indent: 'off',
 
       // React-related rules
       'react/display-name': 'error',
