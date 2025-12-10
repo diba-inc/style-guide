@@ -6,13 +6,15 @@
   "exports": {
     ".": "./dist/index.js",
     "./nextjs": "./dist/nextjs.js",
-    "./node": "./dist/node.js"
+    "./node": "./dist/node.js",
+    "./vitest": "./dist/vitest.js"
   },
   "types": "dist/index.d.ts",
   "typesVersions": {
     "*": {
       "nextjs": ["dist/nextjs.d.ts"],
       "node": ["dist/node.d.ts"],
+      "vitest": ["dist/vitest.d.ts"],
       "*": ["dist/index.d.ts"]
     }
   },
@@ -25,6 +27,7 @@
     "@next/eslint-plugin-next": "^15.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
+    "@vitest/eslint-plugin": "^1.5.0",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-n": "^17.0.0",
