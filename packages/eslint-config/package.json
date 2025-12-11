@@ -1,6 +1,6 @@
 {
   "name": "@diba-inc/eslint-config",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "type": "module",
   "main": "dist/index.js",
   "exports": {
@@ -12,10 +12,18 @@
   "types": "dist/index.d.ts",
   "typesVersions": {
     "*": {
-      "nextjs": ["dist/nextjs.d.ts"],
-      "node": ["dist/node.d.ts"],
-      "vitest": ["dist/vitest.d.ts"],
-      "*": ["dist/index.d.ts"]
+      "nextjs": [
+        "dist/nextjs.d.ts"
+      ],
+      "node": [
+        "dist/node.d.ts"
+      ],
+      "vitest": [
+        "dist/vitest.d.ts"
+      ],
+      "*": [
+        "dist/index.d.ts"
+      ]
     }
   },
   "license": "MPL-2.0",
